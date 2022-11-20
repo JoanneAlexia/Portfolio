@@ -1,0 +1,92 @@
+@use "./modules-partials/profile.scss";
+@use "./modules-partials/about-me.scss";
+@use "./modules-partials/skills.scss";
+@use "./modules-partials/navbar.scss";
+@use "./modules-partials/projects.scss";
+@use "./modules-partials/contact.scss";
+@use "./modules-partials/partials/devices";
+@import "./modules-partials/partials/palette";
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  background-color: $light-blue;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+h1 {
+  font-size: 3.5vh;
+  align-self: center;
+}
+
+.content {
+  color: $grey;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 20px 50px;
+}
+
+.skewed h2 {
+  color: $white;
+}
+
+.skewed {
+  background-color: $transperent-bold-blue;
+}
+
+button#hamburgerBtn {
+  position: fixed;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 5vh;
+  cursor: pointer;
+  padding: 0 30px 0 2vw;
+  top: 0;
+  right: 0;
+  color: #505866;
+  z-index: 2;
+  @include devices.large {
+    visibility: hidden;
+  }
+}
+
+@include devices.large {
+  main {
+    margin-left: 100px;
+  }
+}
+@include navbar.navbar;
+@include profile.profile;
+@include about-me.about-me;
+@include skills.skills;
+@include projects.projects;
+@include contact.contact;
+
+footer {
+  text-align: center;
+  font-size: 2.3vh;
+  padding: 0;
+}

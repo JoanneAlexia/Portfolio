@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name=“viewport” content=”width=device-width, initial-scale=1, maximum-scale=1”>
+    
+    <title>Home | Joanne's Resume</title>
+
+	<!--Links to stylesheets-->
+	<link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+
+	<!--Links to Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,100;1,800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/5301125567.js" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<!--NAVBAR-->
+	<!--------------------------------------------------------------------------------------------------->
+	<button id="hamburgerBtn">&#9776;</button>
+
+	<nav class="navbar">
+		<div class="navbar__header">
+			<h1 class="navbar__header__logo">Jp</h1>
+		</div>
+		<div class="navbar__menu">
+			<div class="navbar__menu__items">
+				<a href="#profile">
+					<div class="navbar__menu__item">
+						<i class="fas fa-home navbar__menu__item__icon"></i>
+						<span class="navbar__menu__item__title">HOME</span>
+					</div>
+				</a>
+				<a href="#aboutMe">
+					<div class="navbar__menu__item">
+						<a href="#aboutMe">
+							<i class="fas fa-address-card navbar__menu__item__icon"></i>
+							<span class="navbar__menu__item__title">ABOUT</span>
+						</a>
+					</div>
+				<div class="navbar__menu__item">
+					<a href="#skills">
+						<i class="fas fa-laptop-code navbar__menu__item__icon"></i>
+						<span class="navbar__menu__item__title">SKILLS</span>
+					</a>
+				</div>
+				<div class="navbar__menu__item">
+					<a href="#projects">
+						<i class="far fa-window-restore navbar__menu__item__icon"></i>
+						<span class="navbar__menu__item__title">PROJECTS</span>
+					</a>
+				</div>
+				<div class="navbar__menu__item">
+					<a href="#contact">
+						<i class="fas fa-phone navbar__menu__item__icon"></i>
+						<span class="navbar__menu__item__title">CONTACT</span>
+				</a>
+			</div>
+			</div>
+		</div>
+	</nav>
+		
+	</nav>
+
+	<!--MAIN-->
+    <main>	
+	
+	<!--PROFILE-->
+	<!--------------------------------------------------------------------------------------------------->
+        <section id="profile" class="profile">
+			<div class="profile__wrapper">
+				<div class="profile__pic">
+					<div class="profile__pic__background1"></div>
+					<div class="profile__pic__background2"></div>
+					<div class="profile__pic__background3"></div>
+					<div class="profile__pic__image"></div>
+				</div>
+				<div class="profile__text">
+					<h2 class="profile__text__greeting">Hi there! I'm</h2>
+					<h1 class="profile__text__name"><span class="profile__text__name--blue">Joanne</span> Pulcina</h1>
+					<p class= "profile__text__info">This is my portfolio showcasing my skills in HTML, CSS, javascript and React.</p>
+					<a href="./Resume.pdf" download><button class="profile__text__resume-button">Resume</button></a>
+				</div>
+			</div>
+		</section>
+		
+	<!--ABOUT ME-->
+	<!--------------------------------------------------------------------------------------------------->
+	<section id="aboutMe" class="about-me skewed">
+		<div class="about-me__wrapper content">
+			<h2>ABOUT ME</h2>
+			<p class = "about-me__text">
+				I am passionate about technology and would love to find 
+				a role that allows me to utilise software advances to 
+				drive positive change in business. I am adept at 
+				learning new skills autonomously and I am confident 
+				that I could learn any of the skills necessary to be 
+				successful in my future role. I am currently 
+				completing a graduate certificate at UTS in Data Science 
+				and Innovation so that I can learn more about machine 
+				learning algorithms and big data. I have also taken a 
+				number of online short courses in web development.  
+				For the past few years, I have been working as a 
+				biomedical engineer at ESL Biosciences. In this role, 
+				I have honed my problem solving and communication skills. I am excited to continue to developing these skills whilst working alongside similarly passionate individuals. 
+			</p> 
+		</div>
+	</section>
+	<!--SKILLS-->
+	<!--------------------------------------------------------------------------------------------------->
+	<section id="skills" class="skills content">
+		<h2 class="skills__title">SKILLS</h2>
+		<div class="skills__icons">
+			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--html"></div>
+				<p class = "skills__icon__description">HTML</p>
+			</div> 
+			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--css"></div>
+				<p class = "skills__icon__description">CSS</p>
+			</div> 
+			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--js"></div>
+				<p class = "skills__icon__description">Javascript</p>
+			</div> 
+			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--react"></div>
+				<p class = "skills__icon__description">React</p>
+			</div> 
+			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--SQL"></div>
+				<p class = "skills__icon__description">SQL</p>
+			</div> 
+			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--python"></div>
+				<p class = "skills__icon__description" >Python</p>
+			</div> 
+		</div>
+	</section>	
+	<!--PROJECTS-->
+	<!--------------------------------------------------------------------------------------------------->
+	<section id="projects" class="projects skewed">
+		<div class="projects__wrapper content">
+			<h2>PROJECTS</h2>
+			<div class="projects__list">
+				<div class="projects__card">
+					<div class ="projects__card__title">Cat App</div>
+					<div class= "projects__card__img  projects__card__img--react-cat"></div>
+					<div class="projects__card__info">
+						<div class="projects__card__info-tech">
+							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
+							REACT, AXIOS & FIREBASE
+						</div>
+						<ul>
+							<li>Site built with React</li>
+							<li>Connects to API to retrieve random cat image using axios</li>
+							<li>Log in authetication with firebase</li>
+							<li>For each image the user has the option to make that image one of their favourites. 
+								Favourite images appear in the favourites board. 
+							</li>
+							<li>Toggle feature allows the colour scheme of the site to be changed.</li>
+						</ul>
+					</div>
+					<div class="projects__card__link-buttons">
+						<a href="https://cat-app-abe7c.web.app/">
+							<button class="projects__card__link-button
+							projects__card__link-button--live-link">Live Link</button>
+						</a>
+						<a href="https://github.com/JoanneAlexia/react_cat">
+							<button class="projects__card__link-button projects__card__link-button--github" >
+								<i class="fab fa-github"></i>
+							</button>
+						</a>
+					</div>	
+				</div>	
+				<div class="projects__card">
+					<div class ="projects__card__title">To Do List</div>
+					<div class= "projects__card__img projects__card__img--to-do"></div>
+					<div class="projects__card__info">
+						<div class="projects__card__info-tech">
+							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
+						HTML, CSS & JAVASCRIPT  </div>
+						<ul>
+							<li>Site built using javascript, html and css.</li>
+							<li>When a new to do list item is added it appears in the to do list. Each item has a 
+								button to delete it from the list or to mark it as completed.</li>
+							<li>The last three completed items will appear in completed item list along with the time and 
+								date the items were completed.</li>
+							<li>Local storage is used to store to do list and completed list data</li>
+						</ul>
+					</div>
+					<div class="projects__card__link-buttons">
+						<a href="ToDoList/index.html">
+							<button class="projects__card__link-button projects__card__link-button--live-link">Live Link</button>
+						</a>
+						<a href="https://github.com/JoanneAlexia/ToDoList.git">
+							<button class="projects__card__link-button
+							projects__card__link-button--github">
+							<i class="fab fa-github"></i>
+						</button>
+						</a>
+					</div>	
+				</div>
+			</div>
+		</div>	
+	</section>
+	<section class="contact content">
+		<h2>Contact</h2>
+		<p class="contact__line">Email: 
+			<a class="contact__detail">joannepulcina@gmail.com</a>
+		</p>
+		<p class="contact__line">Github link:
+			<a href="https://github.com/JoanneAlexia" class="contact__detail">https://github.com/JoanneAlexia</a>
+		</p>
+		<p href="linkedin.com/in/joanne-pulcina-52997b92" class="contact__line">LinkedIn link:
+			<a class="contact__detail">linkedin.com/in/joanne-pulcina-52997b92</a>
+		</p>
+	</section>
+	</main>
+	<footer class="content">
+		<p>Created by Joanne Pulcina 2022</p>
+	</footer>
+	<script src="./js/index.js"></script>
+</body>
+</html>
