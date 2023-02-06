@@ -89,7 +89,7 @@
 				<div class="profile__text">
 					<h2 class="profile__text__greeting">Hi there! I'm</h2>
 					<h1 class="profile__text__name"><span class="profile__text__name--blue">Joanne</span> Pulcina</h1>
-					<p class= "profile__text__info">This is my portfolio showcasing my skills in HTML, CSS, javascript and React.</p>
+					<p class= "profile__text__info">This is my portfolio showcasing my skills in frontend and backend technologies.</p>
 					<a href="./Resume.pdf" download><button class="profile__text__resume-button">Resume</button></a>
 				</div>
 			</div>
@@ -106,8 +106,8 @@
 				drive positive change in business. I am adept at 
 				learning new skills autonomously and I am confident 
 				that I could learn any of the skills necessary to be 
-				successful in my future role. I am currently 
-				completing a graduate certificate at UTS in Data Science 
+				successful in my future role. I have
+				completed a graduate certificate at UTS in Data Science 
 				and Innovation so that I can learn more about machine 
 				learning algorithms and big data. I have also taken a 
 				number of online short courses in web development.  
@@ -131,6 +131,10 @@
 				<p class = "skills__icon__description">CSS</p>
 			</div> 
 			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--sass"></div>
+				<p class = "skills__icon__description" >Sass</p>
+			</div>
+			<div class="skills__icon">
 				<div class="skills__icon__img skills__icon__img--js"></div>
 				<p class = "skills__icon__description">Javascript</p>
 			</div> 
@@ -143,9 +147,18 @@
 				<p class = "skills__icon__description">SQL</p>
 			</div> 
 			<div class="skills__icon">
-				<div class="skills__icon__img skills__icon__img--python"></div>
-				<p class = "skills__icon__description" >Python</p>
+				<div class="skills__icon__img skills__icon__img--java"></div>
+				<p class = "skills__icon__description">Java</p>
 			</div> 
+			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--spring"></div>
+				<p class = "skills__icon__description" >Spring</p>
+			</div> 
+			<div class="skills__icon">
+				<div class="skills__icon__img skills__icon__img--firebase"></div>
+				<p class = "skills__icon__description">Firebase</p>
+			</div> 
+			
 		</div>
 	</section>	
 	<!--PROJECTS-->
@@ -154,6 +167,154 @@
 		<div class="projects__wrapper content">
 			<h2>PROJECTS</h2>
 			<div class="projects__list">
+				<!--FAKE OS-->	
+				<div class="projects__card">
+					<div class ="projects__card__title">Fake OS</div>
+					<div class= "projects__card__img projects__card__img--fakeOS"></div>
+					<div class="projects__card__info">
+						<div class="projects__card__info-tech">
+							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
+						HTML, CSS/SASS & JAVASCRIPT  </div>
+						<ul>
+							<li>Web page mimics the Windows XP operating system.</li>
+							<li>There are three applications on the desktop which can be selected and open windows, pertaining to the application selected. </li>
+							<li>There is a start button which can be clicked to reveal a menu displaying the same three applications present on the desktop. </li>
+						</ul>
+					</div>
+					<div class="projects__card__link-buttons">
+						<a href="ToDoList/index.html">
+							<button class="projects__card__link-button projects__card__link-button--live-link">Live Link</button>
+						</a>
+						<a href="https://github.com/JoanneAlexia/FakeOS" target="_blank">
+							<button class="projects__card__link-button
+							projects__card__link-button--github">
+							<i class="fab fa-github"></i>
+						</button>
+						</a>
+					</div>	
+				</div>
+				<!--MORSE CODE TRANSLATOR-->
+				<div class="projects__card">
+					<div class ="projects__card__title">Morse Code Translator</div>
+					<div class= "projects__card__img projects__card__img--morse"></div>
+					<div class="projects__card__info">
+						<div class="projects__card__info-tech">
+							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
+						HTML, CSS/SCSS, JAVASCRIPT & JEST </div>
+						<ul>
+							<li>A user can enter either Morse code or English text into the input text area on the left and a translation will appear in the output text area on the right once, the "Encode/Decode" button has been selected. </li>
+							<li>The program can detect whether English or Morse code has been entered by the user and will highlight the input language detected. The output language will also be highlighted.</li>
+						</ul>
+					</div>
+					<div class="projects__card__link-buttons">
+						<a href="https://joannealexia.github.io/Morse-Translator/" target="_blank">
+							<button class="projects__card__link-button projects__card__link-button--live-link">Live Link</button>
+						</a>
+						<a href="https://github.com/JoanneAlexia/Morse-Translator">
+							<button class="projects__card__link-button
+							projects__card__link-button--github">
+							<i class="fab fa-github"></i>
+						</button>
+						</a>
+					</div>	
+				</div>
+				<!--GOOGLE BOOKS-->
+				<div class="projects__card">
+					<div class ="projects__card__title">Google Books</div>
+					<div class= "projects__card__img projects__card__img--google-books"></div>
+					<div class="projects__card__info">
+						<div class="projects__card__info-tech">
+							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
+						REACT</div>
+						<ul>
+							<li>This webpage allows a user to search for a book inside the google books database. </li>
+							<li>The page will display a max of 10, 20, 30 or 40 results depending on the users input for Max Results. </li>
+							<li>The results will show an image of the book, title, author or authors and a description, if this data is available.</li>
+						</ul>
+					</div>
+					<div class="projects__card__link-buttons">
+						<a href="https://github.com/JoanneAlexia/google-books" target="_blank">
+							<button class="projects__card__link-button
+							projects__card__link-button--github">
+							<i class="fab fa-github"></i>
+						</button>
+						</a>
+					</div>	
+				</div>
+				<!--ECOMMERCE-->
+				<div class="projects__card">
+					<div class ="projects__card__title">eCommerce Site</div>
+					<div class= "projects__card__img projects__card__img--eShop"></div>
+					<div class="projects__card__info">
+						<div class="projects__card__info-tech">
+							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
+						REACT, Firebase</div>
+						<ul>
+							<li>This is an eCommerce site for cocktail blasts, mixer fizzer that be added to spirts to create cocktails.</li>
+							<li>The product data as well as cart information is stored in a firebase database.</li>
+							<li>Each cocktail card can be selected to open an item page. </li>
+							<li>The cart icon can be selected to open a cart page.</li>
+						</ul>
+					</div>
+					<div class="projects__card__link-buttons">
+						<a href="https://github.com/JoanneAlexia/eCommerce-site" target="_blank">
+							<button class="projects__card__link-button
+							projects__card__link-button--github">
+							<i class="fab fa-github"></i>
+						</button>
+						</a>
+					</div>	
+				</div>
+				<!--HANGMAN-->
+				<div class="projects__card">
+					<div class ="projects__card__title">Hangman</div>
+					<div class= "projects__card__img projects__card__img--hangman"></div>
+					<div class="projects__card__info">
+						<div class="projects__card__info-tech">
+							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
+						JAVA</div>
+						<ul>
+							<li>This is a version of the game Hangman that can be played in a Java console application.</li>
+							<li>The game randomly selects a word from a provided list in a text file when the game begins.</li>
+							<li>The user will then be asked to enter a letter or a word.
+If the letter entered by the user is in the selected word the letter's location in the word will be shown.</li>
+							<li>If the letter is not in the word or the word guess is incorrectly, a part of the hangman will be printed to the console.</li>
+						</ul>
+					</div>
+					<div class="projects__card__link-buttons">
+						<a href="https://github.com/JoanneAlexia/Java-Hangman" target="_blank">
+							<button class="projects__card__link-button
+							projects__card__link-button--github">
+							<i class="fab fa-github"></i>
+						</button>
+						</a>
+					</div>	
+				</div>
+				<!--MINESWEEPER-->
+				<div class="projects__card">
+					<div class ="projects__card__title">Minesweeper</div>
+					<div class= "projects__card__img projects__card__img--minesweeper"></div>
+					<div class="projects__card__info">
+						<div class="projects__card__info-tech">
+							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
+						JAVA</div>
+						<ul>
+							<li>This is a version of the game Minesweeper that can be played in a Java console.</li>
+							<li>A 10x10 grid is displayed to the user. They have the option to select, set a flag on, or unset a flag at a grid position</li>
+							<li>The game will end if the user selected a mine.</li>
+							<li>If the user selected a blank coordinate the number of adjacent minds or dashed will display in the grid</li>
+						</ul>
+					</div>
+					<div class="projects__card__link-buttons">
+						<a href="https://github.com/JoanneAlexia/Minesweeper" target="_blank">
+							<button class="projects__card__link-button
+							projects__card__link-button--github">
+							<i class="fab fa-github"></i>
+						</button>
+						</a>
+					</div>	
+				</div>
+				<!--CAT APP-->
 				<div class="projects__card">
 					<div class ="projects__card__title">Cat App</div>
 					<div class= "projects__card__img  projects__card__img--react-cat"></div>
@@ -163,7 +324,6 @@
 							REACT, AXIOS & FIREBASE
 						</div>
 						<ul>
-							<li>Site built with React</li>
 							<li>Connects to API to retrieve random cat image using axios</li>
 							<li>Log in authetication with firebase</li>
 							<li>For each image the user has the option to make that image one of their favourites. 
@@ -183,34 +343,6 @@
 							</button>
 						</a>
 					</div>	
-				</div>	
-				<div class="projects__card">
-					<div class ="projects__card__title">To Do List</div>
-					<div class= "projects__card__img projects__card__img--to-do"></div>
-					<div class="projects__card__info">
-						<div class="projects__card__info-tech">
-							<span class="projects__card__info-tech--blue">Technologies Used:</span> 
-						HTML, CSS & JAVASCRIPT  </div>
-						<ul>
-							<li>Site built using javascript, html and css.</li>
-							<li>When a new to do list item is added it appears in the to do list. Each item has a 
-								button to delete it from the list or to mark it as completed.</li>
-							<li>The last three completed items will appear in completed item list along with the time and 
-								date the items were completed.</li>
-							<li>Local storage is used to store to do list and completed list data</li>
-						</ul>
-					</div>
-					<div class="projects__card__link-buttons">
-						<a href="ToDoList/index.html">
-							<button class="projects__card__link-button projects__card__link-button--live-link">Live Link</button>
-						</a>
-						<a href="https://github.com/JoanneAlexia/ToDoList.git">
-							<button class="projects__card__link-button
-							projects__card__link-button--github">
-							<i class="fab fa-github"></i>
-						</button>
-						</a>
-					</div>	
 				</div>
 			</div>
 		</div>	
@@ -218,13 +350,13 @@
 	<section class="contact content">
 		<h2>Contact</h2>
 		<p class="contact__line">Email: 
-			<a class="contact__detail">joannepulcina@gmail.com</a>
+			<a href="mailto: joannepulcina@gmail.com" class="contact__detail">joannepulcina@gmail.com</a>
 		</p>
 		<p class="contact__line">Github link:
 			<a href="https://github.com/JoanneAlexia" class="contact__detail">https://github.com/JoanneAlexia</a>
 		</p>
-		<p href="linkedin.com/in/joanne-pulcina-52997b92" class="contact__line">LinkedIn link:
-			<a class="contact__detail">linkedin.com/in/joanne-pulcina-52997b92</a>
+		<p class="contact__line">LinkedIn link:
+			<a href="https://linkedin.com/in/joanne-pulcina-52997b92/" class="contact__detail">linkedin.com/in/joanne-pulcina-52997b92/</a>
 		</p>
 	</section>
 	</main>

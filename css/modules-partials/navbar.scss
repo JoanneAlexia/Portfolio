@@ -1,117 +1,115 @@
 @use "./partials/devices";
 @import "./partials/palette";
 
-@mixin navbar {
-  .navbar {
-    position: fixed;
-    height: 100vh;
-    width: 50vw;
-    background-color: $bold-blue;
-    z-index: 100;
-    color: $white;
-    transform: translate3d(-50vw, 0, 0);
-    transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+.navbar {
+  position: fixed;
+  height: 100vh;
+  width: 50vw;
+  background-color: $bold-blue;
+  z-index: 100;
+  color: $white;
+  transform: translate3d(-50vw, 0, 0);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
 
-    @include devices.large {
-      visibility: visible;
+  @include devices.large {
+    visibility: visible;
+    width: 100px;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__header {
+    background-color: $dark-bold-blue;
+    height: 13vh;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+
+    &__logo {
+      font-size: 5vh;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    &__items {
+      width: max-content;
+      height: max-content;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &__item {
+      margin: 1em 0.6em;
+      padding: 1.2em;
+
+      &__icon {
+        font-size: 4vh;
+        display: inline;
+      }
+      &__title {
+        font-size: 2.5vh;
+        margin-left: 20px;
+        position: relative;
+        display: inline;
+        @include devices.large {
+          visibility: hidden;
+        }
+      }
+    }
+    &__item:hover {
+      background-color: #4095f5;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+  &--open {
+    width: 30vh;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.5s linear;
+  }
+
+  &--close {
+    transform: translate3d(-30vh, 0, 0);
+    transition: transform 0.5s linear;
+  }
+
+  @include devices.large {
+    &:hover {
+      width: 280px;
+      animation-name: open_menu_large;
+      animation-duration: 0.5s;
+    }
+
+    &:not(:hover) {
       width: 100px;
-      transform: translate3d(0, 0, 0);
+      animation-name: close_menu_large;
+      animation-duration: 0.5s;
     }
 
-    &__header {
-      background-color: $dark-bold-blue;
-      height: 13vh;
-      width: 100%;
-      padding: 10px 0;
-      text-align: center;
-
-      &__logo {
-        font-size: 5vh;
-        font-family: "Montserrat", sans-serif;
-      }
+    &:hover span {
+      visibility: visible;
     }
 
-    &__menu {
-      width: 100%;
-      height: 100%;
-      display: flex;
-
-      &__items {
-        width: max-content;
-        height: max-content;
-        justify-content: center;
-        align-content: center;
-      }
-
-      &__item {
-        margin: 1em 0.6em;
-        padding: 1.2em;
-
-        &__icon {
-          font-size: 4vh;
-          display: inline;
-        }
-        &__title {
-          font-size: 2.5vh;
-          margin-left: 20px;
-          position: relative;
-          display: inline;
-          @include devices.large {
-            visibility: hidden;
-          }
-        }
-      }
-      &__item:hover {
-        background-color: #4095f5;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-          0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      }
-    }
-    &--open {
-      width: 30vh;
-      transform: translate3d(0, 0, 0);
-      transition: transform 0.5s linear;
-    }
-
-    &--close {
-      transform: translate3d(-30vh, 0, 0);
-      transition: transform 0.5s linear;
-    }
-
-    @include devices.large {
-      &:hover {
-        width: 220px;
-        animation-name: open_menu_large;
-        animation-duration: 0.5s;
-      }
-
-      &:not(:hover) {
+    @keyframes open_menu_large {
+      0% {
         width: 100px;
-        animation-name: close_menu_large;
-        animation-duration: 0.5s;
       }
-
-      &:hover span {
-        visibility: visible;
+      100% {
+        width: 220px;
       }
+    }
 
-      @keyframes open_menu_large {
-        0% {
-          width: 100px;
-        }
-        100% {
-          width: 220px;
-        }
+    @keyframes close_menu_large {
+      0% {
+        width: 220px;
       }
-
-      @keyframes close_menu_large {
-        0% {
-          width: 220px;
-        }
-        100% {
-          width: 100px;
-        }
+      100% {
+        width: 100px;
       }
     }
   }

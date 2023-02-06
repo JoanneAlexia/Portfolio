@@ -1,20 +1,18 @@
 @import "./partials/palette";
 
-@mixin about-me {
-  .about-me {
-    transform: skew(0deg, -5deg);
+.about-me {
+  transform: skew(0deg, -5deg);
+  padding-bottom: 50px;
+  padding-top: 50px;
 
-    &__wrapper {
-      transform: skew(0deg, 5deg);
-      padding-top: 7vh;
-      padding-bottom: 5vh;
-    }
+  &__wrapper {
+    transform: skew(0deg, 5deg);
+  }
 
-    &__text {
-      color: $white;
-      font-size: 2.5vh;
-      margin: 0;
-      margin-bottom: 20px;
-    }
+  &__text {
+    color: $white;
+    font-size: 2.5vh;
+    margin: 0;
+    margin-bottom: 20px;
   }
 }

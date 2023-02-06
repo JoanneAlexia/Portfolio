@@ -24,103 +24,106 @@
   }
 }
 
-@mixin profile {
-  .profile {
-    height: 100vh;
-    background-color: $light-blue;
+.profile {
+  height: 100vh;
+  background-color: $light-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  &__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 30px;
+    align-self: center;
+    @include devices.large {
+      flex-direction: row;
+    }
+  }
 
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 30px;
-      align-self: center;
-      @include devices.large {
-        flex-direction: row;
+  &__pic {
+    position: relative;
+    height: 35vh;
+    width: 35vh;
+
+    @include devices.medium {
+      height: 37.5vh;
+      width: 37.5vh;
+    }
+
+    &__image {
+      @include profile__pic__circle(
+        url("../images/profile-pic.jpg"),
+        cover,
+        none,
+        none
+      );
+    }
+
+    &__background1 {
+      @include profile__pic__circle(none, none, $faded-blue1, 3vw);
+    }
+
+    &__background2 {
+      @include profile__pic__circle(none, none, $faded-blue2, 2vw);
+    }
+
+    &__background3 {
+      @include profile__pic__circle(none, none, $faded-blue3, 1vw);
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+    @include devices.large {
+      align-items: flex-start;
+      margin-left: 50px;
+      width: 500px;
+    }
+
+    &__greeting {
+      text-transform: uppercase;
+      font-size: 2.5vh;
+    }
+
+    &__name {
+      font-size: 6vh;
+      text-transform: uppercase;
+      color: $grey;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &--blue {
+        color: $bold-blue;
       }
     }
 
-    &__pic {
-      position: relative;
-      height: 35vh;
-      width: 35vh;
-
-      @include devices.medium {
-        height: 37.5vh;
-        width: 37.5vh;
-      }
-
-      &__image {
-        @include profile__pic__circle(
-          url("../images/profile-pic.jpg"),
-          cover,
-          none,
-          none
-        );
-      }
-
-      &__background1 {
-        @include profile__pic__circle(none, none, $faded-blue1, 3vw);
-      }
-
-      &__background2 {
-        @include profile__pic__circle(none, none, $faded-blue2, 2vw);
-      }
-
-      &__background3 {
-        @include profile__pic__circle(none, none, $faded-blue3, 1vw);
-      }
+    &__info {
+      font-size: 2.5vh;
+      padding-bottom: 20px;
     }
 
-    &__text {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      align-items: center;
+    &__resume-button {
+      background-color: $bold-blue;
+      font-size: 2.5vh;
+      color: $white;
+      padding: 1vh;
+      border: none;
+      border-radius: 1vh;
+      width: max-content;
+    }
 
-      @include devices.large {
-        align-items: flex-start;
-        margin-left: 50px;
-        width: 500px;
-      }
-
-      &__greeting {
-        text-transform: uppercase;
-        font-size: 2.5vh;
-      }
-
-      &__name {
-        font-size: 6vh;
-        text-transform: uppercase;
-        color: $grey;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 0;
-
-        &--blue {
-          color: $bold-blue;
-        }
-      }
-
-      &__info {
-        font-size: 2.5vh;
-        padding-bottom: 20px;
-      }
-
-      &__resume-button {
-        background-color: $bold-blue;
-        font-size: 2.5vh;
-        color: $white;
-        padding: 1vh;
-        border: none;
-        border-radius: 1vh;
-        width: max-content;
-      }
+    &__resume-button:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
 }

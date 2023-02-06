@@ -4,6 +4,7 @@
 @use "./modules-partials/navbar.scss";
 @use "./modules-partials/projects.scss";
 @use "./modules-partials/contact.scss";
+
 @use "./modules-partials/partials/devices";
 @import "./modules-partials/partials/palette";
 
@@ -45,7 +46,7 @@ h1 {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: 20px 50px;
+  padding: 5vh 5vw;
 }
 
 .skewed h2 {
@@ -78,12 +79,6 @@ button#hamburgerBtn {
     margin-left: 100px;
   }
 }
-@include navbar.navbar;
-@include profile.profile;
-@include about-me.about-me;
-@include skills.skills;
-@include projects.projects;
-@include contact.contact;
 
 footer {
   text-align: center;

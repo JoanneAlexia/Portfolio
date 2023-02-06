@@ -1,16 +1,14 @@
 @import "./partials/palette";
 
-@mixin contact {
-  .contact {
-    &__line {
-      font-size: 2.5vh;
-      font-weight: bold;
-      color: $bold-blue;
-    }
+.contact {
+  &__line {
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: $bold-blue;
+  }
 
-    &__detail {
-      font-weight: normal;
-      color: $grey;
-    }
+  &__detail {
+    font-weight: normal;
+    color: $grey;
   }
 }
